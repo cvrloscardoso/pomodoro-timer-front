@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# pomodoro-timer-front
-=======
 # pomodoro-timer-front
 
 ## Project setup
