@@ -1,4 +1,6 @@
-# pomodoro-timer-front
+# Pomodoro Timer Front
+
+![Imagem demonstrativa](https://github.com/crscardoso/pomodoro-timer-front/blob/master/src/assets/pomodoro-front-readme.png "Image from screen")
 
 ## Project setup
 ```
