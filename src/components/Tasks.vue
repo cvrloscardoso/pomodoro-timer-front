@@ -1,6 +1,5 @@
 <template>
   <div class="container-fluid">
-    <h1>{{ title }}</h1>{{ subtitle }}
     <div class="alert alert-warning" role="alert" v-show="tasks.length === 0">
       Não existem tarefas!
     </div>
@@ -17,7 +16,9 @@
           <td>{{ task.id }}</td>
           <td>{{ task.task_name }}</td>
           <td>
-            <button class="btn btn-danger" v-on:click="finish_task(index)">Finalizar</button>
+            <button v-show="!task.id == ''" class="btn btn-danger" v-on:click="finish_task(index)">
+              Finalizar
+            </button>
           </td>
         </tr>
       </tbody>
@@ -47,16 +48,13 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Tasks',
   props: {
     msg: String
   },
   data() {
     return {
-      title: "Pomodoro Timer",
-      subtitle: "Powered by Carlos",
-      tasks: [
-        {
+      tasks: [{
 
         },
       ],

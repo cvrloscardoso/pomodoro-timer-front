@@ -1,20 +1,24 @@
 <template>
   <div id="app">
     <pageHeader />
+      <br />
+      <br />
     <timer />
+      <br />
+      <br />
     <tasks />
   </div>
 </template>
 
 <script>
-import pageHeader from './components/pageHeader.vue';
+import PageHeader from './components/PageHeader.vue';
 import Timer from './components/Timer.vue';
 import Tasks from './components/Tasks.vue';
 
 export default {
   name: 'App',
   components: {
-    pageHeader,
+    PageHeader,
     Timer,
     Tasks
   }
