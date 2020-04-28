@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <pageHeader />
+    <timer />
+    <tasks />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import pageHeader from './components/pageHeader.vue';
+import Timer from './components/Timer.vue';
+import Tasks from './components/Tasks.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    pageHeader,
+    Timer,
+    Tasks
   }
 }
 </script>
